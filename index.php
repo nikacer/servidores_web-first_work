@@ -1,3 +1,6 @@
+<?php
+$path = "/servidores-web";
+?>
 <html>
 
 <head>

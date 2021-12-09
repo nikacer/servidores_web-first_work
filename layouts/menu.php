@@ -1,3 +1,7 @@
+<?php
+include_once("./assets/const/menu.const.php");
+include_once("./util/functions.php")
+?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -7,18 +11,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+                <?php
+                foreach ($items as $valor){
+                    ?>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" aria-current="page"
+                        href="<?php echo $path.$valor["url"] ?>"><?php echo $valor["name"] ?></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li>
+                <?php
+                }
+                ?>
+
             </ul>
         </div>
     </div>
