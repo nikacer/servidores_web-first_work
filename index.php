@@ -18,7 +18,6 @@ $path = "/servidores-web";
             include_once("./routers/site.router.php") 
             ?>
         </div>
-        <div class="g-col-12">footer</div>
     </div>
 
 
